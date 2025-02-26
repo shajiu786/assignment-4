@@ -1,0 +1,12 @@
+file1=open('output.txt','w+')
+write1=file1.write(input("enter text to wrtie to the file :") +'\n')
+file1.close()
+file1=open("output.txt",'a+')
+append=file1.write(input("enter additional text to append: " )+'\n')
+print("data sucessfully appended")
+file1.close()
+file1=open('output.txt','r')
+print("final content of output.txt:")
+for line in file1:
+    print(line.strip())
+file1.close()
